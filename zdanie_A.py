@@ -26,4 +26,4 @@ for i in range(1, n + 1):
 
 # TODO: albo anglielski - albo polski - jeżeli chodzi o język naturalny
 #
-print("The sum of series is", round(sum1,2))
+print("Suma wyrazów jest", round(sum1,2))
