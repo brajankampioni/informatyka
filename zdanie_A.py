@@ -22,7 +22,7 @@ for i in range(1, n + 1):
       
       # TODO: zastąpić 1 / i tym co naprawdę ma być liczone
       # 
-      sum1 = sum1 + (1 / i) 
+      sum1 = sum1 + ((1+1/i)) ⁄ ((i**3+1)) 
 
 # TODO: albo anglielski - albo polski - jeżeli chodzi o język naturalny
 #
