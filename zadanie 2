@@ -1,0 +1,30 @@
+# Przedmiot: Informatyka
+# Kierunek studiów: Inżynieria Transportu
+# Semestr: zimowy
+# Rok akademicki: 2020/2021
+# Data (dzień.miesiąc.rok): 18.12.2020
+# Imię: Brajan
+# Nazwisko: Kampioni
+# Numer albumu ZUT: 50410
+
+import hashlib
+
+def main():
+    n = 80
+    file = open('input.txt','r').read()
+    lines = file.split('\n')
+    for line in lines:
+        print(line)
+        size = line.__len__()
+        if size>80:
+            print(line)
+            print('linia za dluga')
+            break
+        line += 'x' * (n-size)
+        print(line.__len__())
+        print(line)
+        print(hashlib.md5(line.encode()))
+
+
+if _name_ == "_main_":
+    main()
