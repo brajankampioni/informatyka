@@ -20,14 +20,14 @@ def main():
     lines = file.split('\n')
     for line in lines:
         print(line)
-        size = line.__len__()
+        size = len(line)
         if size>80:
             print(line)
             print('linia za dluga')
             break
-        line += 'x' * (n-size)
-        print(line.__len__())
-        print(line)
+        line += ' ' * (n-size)
+        #print(line.__len__())
+        print(line, end='')
         print(hashlib.md5(line.encode()))
 
 
